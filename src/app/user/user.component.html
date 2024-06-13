@@ -1,0 +1,33 @@
+
+
+
+<!-- <div >
+    <button (click)="onSelectedUser()"> -->
+        <!-- <img src="'.\assets\Avatars\user-5.jpg"> -->
+
+        <!-- <img [src]="'assets/users/'+selectedUsers.avatar" [alt]=selectedUsers.name / > -->
+        <!-- <img  [src] ="'assets/Avatars/'+selectedUsers.avatar" [alt]="selectedUsers.name"/> -->
+        <!-- <img  [src] ="imagePath" [alt]="selectedUsers.name"/>
+      <span>{{selectedUsers.name}}</span>
+    </button>
+
+</div> -->
+
+
+<!-- <div (click) = "onSelectUser()">
+ <button>
+    <img [src] = "imagePath()" [alt] = "selectedUser().name" />
+    <span>{{ selectedUser().name}}</span>
+ </button>
+</div> -->
+
+
+
+<app-card>
+<div>
+    <button [class.active]="selected" (click)="onSelectedUser()">
+        <img [src]="imagePath" alt="user.name">
+        <span>{{user.name}}</span>
+    </button>
+</div>
+</app-card>
